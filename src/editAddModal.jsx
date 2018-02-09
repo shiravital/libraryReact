@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 export default class EditModal extends React.Component {
     constructor(props) {
@@ -72,7 +74,7 @@ export default class EditModal extends React.Component {
             this.setState({
                 message:'Date is invalid, please enter in this format: mm/dd/yyyy'
             })
-        }   
+        }
         if (!this.state.author) {
             this.setState({
                 message:'Author is required'
@@ -90,7 +92,7 @@ export default class EditModal extends React.Component {
                         message:'Title is already exist, please change name'
                     })
                 }
-            })}   
+            })}
         if (this.state.title && this.state.author && !this.state.message && !message) {
             if (this.props.type == 'Edit') {
             this.props.fnEdit(this.state.title, this.state.author, this.state.date)
@@ -99,7 +101,8 @@ export default class EditModal extends React.Component {
         }
     }
 
-    render() {  
+    render() {
+    console.log("hio");
         return (
             <div className='modal fade in modal-open' style={{display: 'block'}}>
                  <div className='modal-dialog'>
@@ -142,7 +145,16 @@ export default class EditModal extends React.Component {
             </div>
         )
     }
-
 }
 
-
+EditModal.propTypes = {
+  d: PropTypes.string
+  a: PropTypes.string
+  t: PropTypes.string
+  type: PropTypes.string
+  books: PropTypes.array
+  t: PropTypes.string
+  fnCloseModal: PropTypes.function
+  fnEdit: PropTypes.function
+  fnAdd: PropTypes.function
+};

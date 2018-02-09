@@ -6828,7 +6828,7 @@ body {
 
 .bookshelf .shelf {
   height: 440px;
-  
+
 }
 
 .bookshelf .shelf .row-1 {
@@ -6915,6 +6915,12 @@ body {
 }
 .block {
   display: block !important;
+}
+
+.label-text {
+  word-wrap: break-word;
+  color: 'white';
+  textAlign: 'center';
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

@@ -4,7 +4,7 @@ export default class DeleteModal extends React.Component {
     constructor(props) {
         super(props);
     }
-    
+
     cancel() {
         this.props.fnCloseModal();
     }
@@ -12,8 +12,8 @@ export default class DeleteModal extends React.Component {
     delete() {
         this.props.fnDelete();
     }
-    
-    render() {  
+
+    render() {
         return (
         <div className='modal fade in modal-open' style={{display: 'block'}}>
                  <div className='modal-dialog'>
@@ -36,3 +36,8 @@ export default class DeleteModal extends React.Component {
         )
     }
 }
+
+DeleteModal.propTypes = {
+  fnCloseModal: PropTypes.function
+  fnDelete: PropTypes.function
+};

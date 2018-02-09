@@ -1,5 +1,5 @@
 import React from 'react';
-// import Library from './library';
+import PropTypes from 'prop-types';
 
 export default class Book extends React.Component {
   constructor(props) {
@@ -18,16 +18,16 @@ export default class Book extends React.Component {
     return (
       <div>
         <div className='row'>
-            <label className='col-xs-12' style={{color: 'white', textAlign: 'center',fontSize: '10px',paddingTop: '30px'}}>{this.props.date}</label>
+            <label className='col-xs-12 label-text' style={{fontSize: '10px',paddingTop: '30px'}}>{this.props.date}</label>
          </div>
         <div className='row'>
-            <label className='col-xs-12' style={{fontFamily:'Palatino Linotype', textAlign: 'center',color: 'white',fontSize: '11px'}}>{this.props.author}</label>
+            <label className='col-xs-12 label-text' style={{fontFamily:'Palatino Linotype', fontSize: '11px'}}>{this.props.author}</label>
         </div>
-        
+
         <div className='row'>
-            <label className='col-xs-12' style={{color: 'white', textAlign: 'center'}}>{this.props.title}</label>
+            <label className='col-xs-12 label-text'>{this.props.title}</label>
         </div>
-        
+
          <div className='row-edit'>
             <button type='button' className='btn btn-edit' onClick={this.editClick.bind(this)}><i className="glyphicon glyphicon-edit"></i></button>
             <button type='button' className='btn btn-edit' onClick={this.deleteClick.bind(this)}><i className="glyphicon glyphicon-trash"></i></button>
@@ -37,4 +37,9 @@ export default class Book extends React.Component {
   }
 }
 
-
+Book.propTypes = {
+  date: PropTypes.string
+  author: PropTypes.string
+  title: PropTypes.string
+  fnOpenModal: PropTypes.function
+};
