@@ -1,0 +1,50 @@
+{
+    "books": [
+      {
+        "title": "Autumn",
+        "author": "Ali Smith",
+        "date": "12/19/2017"
+      },{
+        "title": "Exit West",
+        "author": "Mohsin Hamid",
+        "date": "11/19/2017"
+      },{
+        "title": "Pachinko",
+        "author": "Min Jin Lee",
+        "date": "10/19/2017"
+      },
+      {
+        "title": "The Power",
+        "author": "Naomi Alderman",
+        "date": "9/19/2017"
+      },
+      {
+        "title": "Sing, Unburied, Singv",
+        "author": "Jesmyn Ward",
+        "date": "8/19/2017"
+      },
+      {
+        "title": "The Evolution of Beauty",
+        "author": "Richard O. Prum",
+        "date": "7/19/2017"
+      },{
+        "title": "Grant",
+        "author": "Ron Chernow",
+        "date": "6/19/2017"
+      },{
+        "title": "Locking Up Our Own",
+        "author": "James Forman Jr.",
+        "date": "5/19/2017"
+      },
+      {
+        "title": "Prairie Fires",
+        "author": "Caroline Fraser",
+        "date": "4/19/2017"
+      },
+      {
+        "title": "Priestdaddy",
+        "author": "Patricia Lockwood",
+        "date": "3/19/2017"
+      }
+    ]
+  }
